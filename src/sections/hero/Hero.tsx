@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 
 export const Hero = () => {
@@ -39,12 +40,16 @@ export const Hero = () => {
             Delivering premium infrastructure and commercial construction projects that redefine modern corporate architectural excellence.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <Button size="lg" variant="royal" className="min-w-[200px] rounded-none shadow-xl shadow-royal/20">
-              Explore Projects
-            </Button>
-            <Button variant="outline" size="lg" className="min-w-[200px] border-white/40 text-white hover:bg-white hover:text-navy rounded-none">
-              Contact Us
-            </Button>
+            <Link href="/projects">
+              <Button size="lg" variant="royal" className="min-w-[200px] rounded-none shadow-xl shadow-royal/20">
+                Explore Projects
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button variant="outline" size="lg" className="min-w-[200px] border-white/40 text-white hover:bg-white hover:text-navy rounded-none">
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </motion.div>
       </div>

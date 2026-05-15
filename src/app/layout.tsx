@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Cinzel } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -39,7 +41,9 @@ export default function RootLayout({
       className={`${inter.variable} ${cinzel.variable} scroll-smooth`}
     >
       <body className="bg-white text-navy font-sans antialiased overflow-x-hidden">
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

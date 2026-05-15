@@ -38,8 +38,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-navy font-heading font-semibold text-lg mb-2">Phone</h4>
-                  <p className="text-navy/50 font-light">+91 99999 88888</p>
-                  <p className="text-navy/50 font-light">+91 40 1234 5678</p>
+                  <p className="text-navy/50 font-light">+91 77023 35599</p>
                 </div>
               </div>
 
@@ -49,8 +48,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-navy font-heading font-semibold text-lg mb-2">Email</h4>
-                  <p className="text-navy/50 font-light">contact@pavilioninfra.com</p>
-                  <p className="text-navy/50 font-light">info@pavilioninfra.com</p>
+                  <p className="text-navy/50 font-light">karthikchukkapalli@pavilioninfra.com</p>
                 </div>
               </div>
             </div>
