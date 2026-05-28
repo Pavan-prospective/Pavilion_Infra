@@ -45,11 +45,9 @@ export const Team = () => {
           <div className="lg:w-1/2 relative">
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <img src="https://images.unsplash.com/photo-1504307651254-35682fd9367d?auto=format&fit=crop&q=80&w=800" alt="Excellence" className="w-full aspect-square object-cover" />
                 <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800" alt="Excellence" className="w-full aspect-[3/4] object-cover" />
               </div>
               <div className="space-y-4 translate-y-8">
-                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=800" alt="Excellence" className="w-full aspect-[3/4] object-cover" />
                 <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800" alt="Excellence" className="w-full aspect-square object-cover" />
               </div>
             </div>
