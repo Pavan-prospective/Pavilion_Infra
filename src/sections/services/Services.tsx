@@ -17,7 +17,7 @@ export const Services = () => {
           align="center"
         />
 
-        <div className="mt-24 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 divide-y md:divide-y-0 md:divide-x divide-navy/5">
+        <div className="mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 md:gap-8">
           {SERVICES.map((service, index) => {
             const Icon = (Icons as any)[service.icon];
             return (
@@ -27,7 +27,7 @@ export const Services = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-8 group hover:bg-soft-grey transition-all duration-700"
+                className="p-8 bg-[#F8FAFC] border border-royal/10 hover:border-royal/30 rounded-2xl group hover:bg-white hover:shadow-xl transition-all duration-500 flex flex-col justify-between h-full shadow-sm"
               >
                 <div className="mb-10 text-royal group-hover:scale-110 transition-transform duration-500">
                   {Icon && <Icon size={48} strokeWidth={1} />}

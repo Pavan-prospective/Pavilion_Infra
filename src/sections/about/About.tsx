@@ -45,7 +45,7 @@ export const About = () => {
               <p>
                 We believe that every structure is an opportunity to engineering excellence. Whether it's a massive commercial hub, a state-of-the-art sports academy, or ultra-luxury development, we bring the same level of precision, quality, and architectural integrity to every project.
               </p>
-              <div className="grid grid-cols-2 gap-10 pt-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-10 pt-8">
                 <div>
                   <h4 className="text-navy font-heading font-semibold mb-2">Excellence</h4>
                   <p className="text-sm">Uncompromising standards in every detail.</p>
