@@ -23,7 +23,7 @@ export const Hero = () => {
         />
       </motion.div>
 
-      <div className="container mx-auto px-6 relative z-20 text-center">
+      <div className="container mx-auto px-6 relative z-20 text-center pt-24 md:pt-0">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -50,6 +50,35 @@ export const Hero = () => {
                 Contact Us
               </Button>
             </Link>
+          </div>
+
+          {/* Hero Certifications Badges with Images */}
+          <div className="mt-12 md:mt-16 flex flex-col items-center gap-4 md:gap-6">
+            <span className="text-white/40 text-[10px] md:text-xs tracking-[0.2em] uppercase font-semibold">
+              Certified ISO Standards
+            </span>
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+              {[
+                { name: "ISO 14001:2015", src: "/1.png" },
+                { name: "ISO 9001:2015", src: "/2.png" },
+                { name: "ISO 45001:2018", src: "/3.png" }
+              ].map((cert, index) => (
+                <motion.div 
+                  key={index}
+                  whileHover={{ scale: 1.05 }}
+                  className="relative group bg-white/5 p-2 rounded-xl border border-white/10 backdrop-blur-sm shadow-xl"
+                >
+                  <div className="w-20 h-28 md:w-28 md:h-36 bg-white/10 rounded-lg overflow-hidden relative flex items-center justify-center">
+                    <span className="absolute text-white/30 text-[10px] font-bold text-center px-1 z-0">{cert.name}</span>
+                    <img 
+                      src={cert.src} 
+                      alt={cert.name}
+                      className="w-full h-full object-cover relative z-10 opacity-90 group-hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </motion.div>
       </div>
