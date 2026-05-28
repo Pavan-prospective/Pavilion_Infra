@@ -1,5 +1,5 @@
 import { FlagshipProjects } from "@/sections/projects/FlagshipProjects";
 
-export default function ProjectsPage() {
+export default function FlagshipProjectsPage() {
   return <FlagshipProjects />;
 }

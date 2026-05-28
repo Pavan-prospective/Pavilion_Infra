@@ -63,6 +63,36 @@ export const About = () => {
                   <p className="text-sm">Eco-conscious building for a better tomorrow.</p>
                 </div>
               </div>
+
+              {/* Certifications Block with Images */}
+              <div className="pt-12">
+                <h4 className="text-navy font-heading font-semibold mb-6 flex items-center gap-4">
+                  <span className="w-8 h-[1px] bg-royal"></span>
+                  Our Certifications
+                </h4>
+                <div className="flex flex-wrap gap-6">
+                  {[
+                    { name: "ISO 14001:2015", src: "/1.png" },
+                    { name: "ISO 9001:2015", src: "/2.png" },
+                    { name: "ISO 45001:2018", src: "/3.png" }
+                  ].map((cert, index) => (
+                    <motion.div 
+                      key={index}
+                      whileHover={{ scale: 1.05 }}
+                      className="relative p-2 bg-white rounded-xl shadow-lg border border-navy/5"
+                    >
+                      <div className="w-24 h-32 sm:w-28 sm:h-40 bg-navy/5 rounded-lg overflow-hidden relative flex items-center justify-center">
+                        <span className="absolute text-navy/30 text-[10px] font-bold text-center px-1 z-0">{cert.name}</span>
+                        <img 
+                          src={cert.src} 
+                          alt={cert.name}
+                          className="w-full h-full object-cover relative z-10"
+                        />
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
