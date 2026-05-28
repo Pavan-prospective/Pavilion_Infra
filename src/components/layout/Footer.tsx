@@ -19,7 +19,7 @@ export const Footer = () => {
               />
             </Link>
             <p className="text-navy/50 text-xs tracking-wider max-w-xs">
-              Engineering landmark spaces with corporate excellence since 2018.
+              Engineering landmark spaces with corporate excellence since 2017.
             </p>
           </div>
 
