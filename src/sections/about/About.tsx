@@ -1,10 +1,11 @@
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export const About = () => {
+  const [selectedCert, setSelectedCert] = useState<string | null>(null);
   return (
     <section id="about" className="py-24 md:py-40 bg-white overflow-hidden">
       <div className="container mx-auto px-6">
@@ -79,7 +80,8 @@ export const About = () => {
                     <motion.div 
                       key={index}
                       whileHover={{ scale: 1.05 }}
-                      className="relative p-2 bg-white rounded-xl shadow-lg border border-navy/5"
+                      onClick={() => setSelectedCert(cert.src)}
+                      className="relative p-2 bg-white rounded-xl shadow-lg border border-navy/5 cursor-pointer"
                     >
                       <div className="w-24 h-32 sm:w-28 sm:h-40 bg-navy/5 rounded-lg overflow-hidden relative flex items-center justify-center">
                         <span className="absolute text-navy/30 text-[10px] font-bold text-center px-1 z-0">{cert.name}</span>
@@ -97,6 +99,39 @@ export const About = () => {
           </div>
         </div>
       </div>
+
+      {/* Lightbox Modal */}
+      <AnimatePresence>
+        {selectedCert && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedCert(null)}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-navy/90 backdrop-blur-sm p-4 sm:p-10 cursor-pointer"
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="relative max-w-4xl max-h-[90vh] rounded-xl overflow-hidden shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <img 
+                src={selectedCert} 
+                alt="Certificate Full View" 
+                className="w-auto h-auto max-w-full max-h-[90vh] object-contain"
+              />
+              <button 
+                onClick={() => setSelectedCert(null)}
+                className="absolute top-4 right-4 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center text-white transition-colors"
+              >
+                ✕
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 };
