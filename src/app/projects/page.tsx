@@ -1,6 +1,7 @@
 import { FlagshipProjects } from "@/sections/projects/FlagshipProjects";
 import { Timeline } from "@/sections/timeline/Timeline";
 import { OngoingProjects } from "@/sections/projects/OngoingProjects";
+import { UpcomingProjects } from "@/sections/projects/UpcomingProjects";
 
 export default function ProjectsPage() {
   return (
@@ -8,6 +9,7 @@ export default function ProjectsPage() {
       <FlagshipProjects />
       <Timeline />
       <OngoingProjects />
+      <UpcomingProjects />
     </main>
   );
 }

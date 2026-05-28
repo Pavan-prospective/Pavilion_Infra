@@ -4,25 +4,25 @@ import React from "react";
 import { motion } from "framer-motion";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PROJECTS } from "@/constants/data";
-import Image from "next/image";
 
-export const OngoingProjects = () => {
+export const UpcomingProjects = () => {
   return (
-    <section className="py-24 md:py-40 bg-white">
+    <section id="upcoming" className="py-24 md:py-40 bg-gray-50">
       <div className="container mx-auto px-6">
         <SectionHeading
-          subtitle="Coming Soon"
-          title="Ongoing Projects"
-          description="A glimpse into our current developments across commercial infrastructure and corporate hubs."
+          subtitle="Future Developments"
+          title="Upcoming Projects"
+          description="Discover our visionary upcoming projects set to redefine standards across hospitality and commercial sectors."
           align="center"
         />
 
         <div className="mt-24 space-y-32">
-          {PROJECTS.ongoing.map((project, index) => (
+          {PROJECTS.upcoming.map((project, index) => (
             <div
               key={project.id}
-              className={`flex flex-col lg:flex-row items-center gap-12 lg:gap-24 ${index % 2 !== 0 ? "lg:flex-row-reverse" : ""
-                }`}
+              className={`flex flex-col lg:flex-row items-center gap-12 lg:gap-24 ${
+                index % 2 !== 0 ? "lg:flex-row-reverse" : ""
+              }`}
             >
               {/* Images Side */}
               <motion.div
@@ -34,20 +34,24 @@ export const OngoingProjects = () => {
               >
                 <div className="relative aspect-[4/3] w-full max-w-xl mx-auto">
                   {/* Primary Image */}
-                  <div className="absolute inset-0 z-10 border-l-8 border-royal shadow-2xl overflow-hidden">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                    />
+                  <div className="absolute inset-0 z-10 border-l-8 border-royal shadow-2xl overflow-hidden bg-gray-200">
+                    {project.image && (
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                      />
+                    )}
                   </div>
-                  {/* Decorative Background Image (Placeholder for the second overlapping image) */}
-                  <div className="absolute -bottom-10 -right-10 w-2/3 h-2/3 z-20 border-l-8 border-royal shadow-2xl overflow-hidden hidden md:block">
-                    <img
-                      src={project.image1} // Using same image but zoomed/shifted for placeholder effect
-                      alt={`${project.title} detail`}
-                      className="w-full h-full object-cover opacity-90 brightness-75 scale-125"
-                    />
+                  {/* Decorative Background Image */}
+                  <div className="absolute -bottom-10 -right-10 w-2/3 h-2/3 z-20 border-l-8 border-royal shadow-2xl overflow-hidden hidden md:block bg-gray-300">
+                    {project.image1 && (
+                      <img
+                        src={project.image1}
+                        alt={`${project.title} detail`}
+                        className="w-full h-full object-cover opacity-90 brightness-75 scale-125"
+                      />
+                    )}
                   </div>
                 </div>
               </motion.div>
@@ -67,7 +71,7 @@ export const OngoingProjects = () => {
                   <div className="w-20 h-1 bg-royal" />
                 </div>
 
-                <div className="bg-[#EBF5FB] rounded-[40px] p-10 md:p-14 shadow-sm border border-royal/5">
+                <div className="bg-white rounded-[40px] p-10 md:p-14 shadow-sm border border-royal/5">
                   <div className="grid grid-cols-1 gap-10">
                     <div className="space-y-1">
                       <span className="text-royal/60 text-xs font-bold uppercase tracking-widest">Project Name</span>
