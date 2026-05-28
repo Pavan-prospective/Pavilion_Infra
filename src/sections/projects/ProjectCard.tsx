@@ -23,7 +23,7 @@ export const ProjectCard = ({
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="group relative bg-[#F8FAFC] border border-royal/10 hover:border-royal/30 p-8 cursor-pointer shadow-sm hover:shadow-md transition-all duration-300 rounded-2xl h-full flex flex-col"
+      className="group relative bg-[#F8FAFC] border border-royal/10 hover:border-royal/30 p-6 sm:p-8 cursor-pointer shadow-sm hover:shadow-md transition-all duration-300 rounded-2xl h-full flex flex-col"
     >
       <div className="flex flex-col h-full justify-between space-y-6">
         <div>

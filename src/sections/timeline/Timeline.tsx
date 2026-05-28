@@ -17,7 +17,7 @@ export const Timeline = () => {
         />
 
         {/* Grid of Years */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
           {COMPLETED_PROJECTS.map((yearData, index) => (
             <motion.div
               key={yearData.year}
@@ -25,7 +25,7 @@ export const Timeline = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-soft-grey border border-navy/5 p-8 shadow-sm flex flex-col hover:border-royal/30 transition-colors duration-500"
+              className="bg-soft-grey border border-navy/5 p-6 sm:p-8 shadow-sm flex flex-col hover:border-royal/30 transition-colors duration-500"
             >
               <h3 className="text-[3.5rem] leading-none font-heading font-bold text-navy mb-8 tracking-tight">
                 {yearData.year}
