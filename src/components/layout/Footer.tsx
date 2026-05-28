@@ -29,11 +29,15 @@ export const Footer = () => {
               <ul className="space-y-2">
                 <li className="flex items-center gap-3 text-navy/60 text-xs">
                   <Phone size={12} className="text-royal" />
-                  +91 77023 35599
+                  <a href="tel:+917702335599" className="hover:text-royal transition-colors">
+                    +91 77023 35599
+                  </a>
                 </li>
                 <li className="flex items-center gap-3 text-navy/60 text-xs">
                   <Mail size={12} className="text-royal" />
-                  karthikchukkapalli@pavilioninfra.com
+                  <a href="mailto:kartheekchukkapalli@pavilioninfra.com" className="hover:text-royal transition-colors break-all">
+                    kartheekchukkapalli@pavilioninfra.com
+                  </a>
                 </li>
               </ul>
             </div>
