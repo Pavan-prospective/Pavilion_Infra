@@ -16,7 +16,7 @@ export const Clients = () => {
           align="center"
         />
 
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12 items-center">
+        <div className="mt-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-8 items-center justify-center">
           {CLIENTS.map((client, index) => (
             <motion.div
               key={client.name}
