@@ -101,14 +101,14 @@ export const Navbar = () => {
               </Link>
             );
           })}
-          <Link href="/contact">
+          {/* <Link href="/contact">
             <Button variant={shouldShowSolid ? "primary" : "outline"} size="sm" className={cn(
               "rounded-none font-bold",
               !shouldShowSolid && "border-white/60 text-white hover:bg-white hover:text-navy"
             )}>
               Inquire Now
             </Button>
-          </Link>
+          </Link> */}
         </div>
 
         {/* Mobile Toggle */}
@@ -180,11 +180,11 @@ export const Navbar = () => {
                   </Link>
                 );
               })}
-              <Link href="/contact" className="w-full">
+              {/* <Link href="/contact" className="w-full">
                 <Button variant="royal" className="w-full rounded-none">
                   Inquire Now
                 </Button>
-              </Link>
+              </Link> */}
             </div>
           </motion.div>
         )}

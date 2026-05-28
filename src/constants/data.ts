@@ -48,7 +48,7 @@ export const PROJECTS = {
     {
       id: "VPR Shantiniketham",
       title: "VPR Shantiniketham",
-      category: "Luxery Villas",
+      category: "Luxury Villas",
       location: "nellore",
       acres: "10 Acres",
       area: "3,50,000 Sq Ft",
@@ -228,7 +228,7 @@ export const COMPLETED_PROJECTS = [
     ],
   },
   {
-    year: "2018",
+    year: "2017",
     projects: [
       {
         name: "Residential Apartments, Pavilion 1",

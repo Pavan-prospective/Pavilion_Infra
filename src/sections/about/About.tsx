@@ -29,7 +29,7 @@ export const About = () => {
             <div className="absolute -bottom-10 -right-10 w-40 h-40 border-b border-r border-royal/20 z-0" />
             <div className="absolute top-1/2 -right-20 -translate-y-1/2 hidden lg:block">
               <span className="text-[10rem] font-heading font-black text-navy/[0.02] select-none">
-                ESTD 2018
+                ESTD 2017
               </span>
             </div>
           </motion.div>
@@ -41,7 +41,7 @@ export const About = () => {
             />
             <div className="space-y-8 text-navy/70 font-light leading-relaxed text-lg">
               <p>
-                Founded in 2018, Pavilion Infra has rapidly emerged as a leader in high-end infrastructure and commercial construction. Our journey began with a simple yet powerful vision: to create spaces that transcend the ordinary.
+                Founded in 2017, Pavilion Infra has rapidly emerged as a leader in high-end infrastructure and commercial construction. Our journey began with a simple yet powerful vision: to create spaces that transcend the ordinary.
               </p>
               <p>
                 We believe that every structure is an opportunity to engineering excellence. Whether it's a massive commercial hub, a state-of-the-art sports academy, or ultra-luxury development, we bring the same level of precision, quality, and architectural integrity to every project.

@@ -3,6 +3,7 @@ import { About } from "@/sections/about/About";
 import { PortfolioShowcase } from "@/sections/projects/PortfolioShowcase";
 import { Services } from "@/sections/services/Services";
 import { Contact } from "@/sections/contact/Contact";
+import { Clients } from "@/sections/clients/Clients";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <About />
       <PortfolioShowcase />
+      <Clients />
       <Services />
       <Contact />
     </main>

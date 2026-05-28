@@ -26,8 +26,9 @@ export const Contact = () => {
                 <div>
                   <h4 className="text-navy font-heading font-semibold text-lg mb-2">Our Office</h4>
                   <p className="text-navy/50 font-light leading-relaxed">
-                    123 Luxury Boulevard, Executive Heights, <br />
-                    Suite 500, City - 500001
+                    4th Floor, Plot 19, Ravi Shankar Arcade, <br />
+                    Jayabheri Pine Valley, Gachibowli, <br />
+                    Hyderabad, Telangana 500032
                   </p>
                 </div>
               </div>
@@ -48,12 +49,13 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-navy font-heading font-semibold text-lg mb-2">Email</h4>
-                  <p className="text-navy/50 font-light">karthikchukkapalli@pavilioninfra.com</p>
+                  <p className="text-navy/50 font-light">kartheekchukkapalli@pavilioninfra.com</p>
                 </div>
               </div>
             </div>
           </div>
 
+          {/* 
           <motion.div
             initial={{ opacity: 0, scale: 0.98 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -88,6 +90,7 @@ export const Contact = () => {
               <Button size="lg" variant="primary" className="w-full rounded-none">Submit Inquiry</Button>
             </form>
           </motion.div>
+          */}
         </div>
       </div>
     </section>
