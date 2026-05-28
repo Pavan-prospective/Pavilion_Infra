@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/Button";
 
 export const Hero = () => {
   return (
-    <section className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-navy">
+    <section className="relative min-h-[100dvh] w-full flex items-center justify-center overflow-hidden bg-navy py-32 md:py-0">
       {/* Background with Parallax effect */}
       <motion.div
         initial={{ scale: 1.1 }}
@@ -23,7 +23,7 @@ export const Hero = () => {
         />
       </motion.div>
 
-      <div className="container mx-auto px-6 relative z-20 text-center pt-24 md:pt-0">
+      <div className="container mx-auto px-6 relative z-20 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -88,7 +88,7 @@ export const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-4"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex-col items-center gap-4 hidden md:flex"
       >
         <span className="text-white/30 text-[10px] uppercase tracking-[0.4em] rotate-90 origin-left translate-x-2">
           Scroll
